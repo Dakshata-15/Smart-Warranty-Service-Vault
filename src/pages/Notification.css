@@ -1,0 +1,212 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);
+    min-height:100vh;
+}
+
+/* ================= PAGE ================= */
+
+.notificationPage{
+
+    width:95%;
+    margin:auto;
+    padding:30px;
+    color:white;
+
+}
+
+.notificationPage h1{
+
+    text-align:center;
+    margin-bottom:25px;
+
+}
+
+/* ================= BACK BUTTON ================= */
+
+.backButton{
+
+    display:inline-block;
+    margin-bottom:20px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+
+}
+
+/* ================= SEARCH ================= */
+
+.searchBar{
+
+    display:flex;
+    align-items:center;
+    width:320px;
+    margin-bottom:20px;
+    background:rgba(255,255,255,0.12);
+    border-radius:10px;
+    padding:10px 15px;
+
+}
+
+.searchIcon{
+
+    color:white;
+    margin-right:10px;
+    font-size:20px;
+
+}
+
+.searchBar input{
+
+    flex:1;
+    background:transparent;
+    border:none;
+    outline:none;
+    color:white;
+    font-size:16px;
+
+}
+
+.searchBar input::placeholder{
+
+    color:#ddd;
+
+}
+
+/* ================= TABLE ================= */
+
+.tableContainer{
+
+    overflow-x:auto;
+    border-radius:15px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    color:white;
+
+}
+
+th{
+
+    background:rgba(255,255,255,.15);
+    padding:15px;
+    text-align:center;
+
+}
+
+td{
+
+    padding:15px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.15);
+
+}
+
+tr:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+
+/* ================= STATUS ================= */
+
+.unread{
+
+    background:#ff4d4d;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+
+}
+
+.read{
+
+    background:#28a745;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+
+}
+
+/* ================= BUTTONS ================= */
+
+.readBtn{
+
+    background:#28a745;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:13px;
+}
+
+.readBtn:hover{
+
+    background:#1f8a36;
+
+}
+
+.deleteBtn{
+
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.deleteBtn:hover{
+
+    background:#b02a37;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .searchBar{
+
+        width:100%;
+
+    }
+
+    table{
+
+        font-size:13px;
+
+    }
+
+    th,
+    td{
+
+        padding:10px;
+
+    }
+
+}
+/*===========================================================*/
+td{
+    padding:15px;
+    text-align:center;
+    vertical-align:middle;   /* Centers everything vertically */
+    border-top:1px solid rgba(255,255,255,.15);
+}

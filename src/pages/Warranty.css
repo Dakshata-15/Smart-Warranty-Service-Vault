@@ -1,0 +1,596 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);
+    min-height:100vh;
+}
+
+/* ================= PAGE ================= */
+
+.warrantyPage{
+
+    width:95%;
+    max-width:1400px;
+    margin:40px auto;
+    color:white;
+
+}
+
+.warrantyPage h1{
+
+    text-align:center;
+    font-size:40px;
+    margin-bottom:30px;
+    letter-spacing:1px;
+
+}
+
+/* ================= BACK BUTTON ================= */
+
+.backButton{
+
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background:#3949ab;
+    padding:10px 22px;
+    border-radius:10px;
+    font-weight:bold;
+    margin-bottom:25px;
+    transition:.3s;
+
+}
+
+.backButton:hover{
+
+    background:#283593;
+    transform:translateY(-2px);
+
+}
+
+/* ================= FORM ================= */
+
+.warrantyForm{
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+.warrantyForm input,
+.warrantyForm textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.15);
+
+    color:white;
+
+    font-size:15px;
+
+    box-sizing:border-box;
+
+    transition:.3s;
+
+}
+
+.warrantyForm textarea{
+
+    min-height:90px;
+
+    resize:none;
+
+    grid-column:1/span 2;
+
+}
+
+.warrantyForm input::placeholder,
+.warrantyForm textarea::placeholder{
+
+    color:#dcdcdc;
+
+}
+
+.warrantyForm input:focus,
+.warrantyForm textarea:focus{
+
+    background:rgba(255,255,255,.22);
+
+    box-shadow:0 0 12px rgba(255,255,255,.25);
+
+}
+
+/* ================= BUTTONS ================= */
+
+.buttonGroup button{
+
+    width:170px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:all .3s ease;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.18);
+
+}
+
+.buttonGroup button{
+
+    width:170px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.saveBtn{
+
+    background:#00c853;
+
+    color:white;
+
+}
+
+.saveBtn:hover{
+
+    background:#009624;
+
+    transform:translateY(-2px);
+
+}
+
+.updateBtn{
+
+    background:#ff9800;
+
+    color:white;
+
+}
+
+.updateBtn:hover{
+
+    background:#ef6c00;
+
+    transform:translateY(-2px);
+
+}
+
+.clearBtn{
+
+    background:#607d8b;
+
+    color:white;
+
+}
+
+.clearBtn:hover{
+
+    background:#455a64;
+
+    transform:translateY(-2px);
+
+}
+
+.scanBtn{
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+    color:white;
+
+    box-shadow:0 8px 20px rgba(37,99,235,.25);
+
+}
+
+.scanBtn:hover{
+
+    background:linear-gradient(135deg,#1d4ed8,#1e40af);
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.35);
+
+}
+/* ================= SEARCH ================= */
+
+.searchBar{
+
+    width:350px;
+
+    height:55px;
+
+    margin:35px 0 30px auto;
+
+    display:flex;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.15);
+
+    border-radius:12px;
+
+    padding:0 18px;
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    transition:.3s;
+
+    box-sizing:border-box;
+
+}
+
+
+.searchBar:focus-within{
+
+    box-shadow:0 0 15px rgba(255,255,255,.25);
+
+    background:rgba(255,255,255,.22);
+
+}
+
+
+.searchIcon{
+
+    font-size:22px;
+
+    display:flex;
+
+    align-items:center;
+
+    margin-right:12px;
+
+    color:white;
+
+}
+
+
+.searchBar input{
+
+    flex:1;
+
+    height:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:white;
+
+    font-size:16px;
+
+    padding:0;
+
+    margin:0;
+
+    line-height:55px;
+
+}
+
+
+.searchBar input::placeholder{
+
+    color:#dddddd;
+
+}
+
+/* ================= TABLE ================= */
+
+.tableContainer{
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+    overflow-x:auto;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    color:white;
+
+}
+
+thead{
+
+    background:#243b6b;
+
+}
+
+th{
+
+    padding:18px;
+
+    font-size:16px;
+
+}
+
+td{
+
+    padding:15px;
+
+    text-align:center;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+tbody tr{
+
+    transition:.3s;
+
+}
+
+tbody tr:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+
+/* ================= STATUS ================= */
+
+.activeStatus{
+
+    background:#2ecc71;
+
+    color:white;
+
+    padding:7px 15px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}
+
+.expiredStatus{
+
+    background:#e53935;
+
+    color:white;
+
+    padding:7px 15px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}
+/* ================= EXPIRING SOON ================= */
+
+.expiringStatus{
+
+    background:#ffc107;
+
+    color:#000;
+
+    padding:7px 15px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}
+
+/* ================= EDIT ================= */
+
+.editBtn{
+
+    width:90px;
+
+    height:36px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#2196f3;
+
+    color:white;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.editBtn:hover{
+
+    background:#1565c0;
+
+    transform:scale(1.05);
+
+}
+
+/* ================= DELETE ================= */
+
+.deleteBtn{
+
+    width:90px;
+
+    height:36px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#f44336;
+
+    color:white;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.deleteBtn:hover{
+
+    background:#b71c1c;
+
+    transform:scale(1.05);
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .warrantyForm{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .warrantyForm textarea{
+
+        grid-column:auto;
+
+    }
+
+    .buttonGroup{
+
+        grid-column:auto;
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .searchBar{
+
+        justify-content:center;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .warrantyPage{
+
+        width:96%;
+
+    }
+
+    .warrantyPage h1{
+
+        font-size:30px;
+
+    }
+
+    th{
+
+        font-size:14px;
+
+    }
+
+    td{
+
+        font-size:13px;
+
+        padding:10px;
+
+    }
+
+    .searchBar input{
+
+        width:100%;
+
+    }
+
+}
+.expiringStatus{
+
+    background:#ffc107;
+
+    color:black;
+
+    padding:7px 15px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}

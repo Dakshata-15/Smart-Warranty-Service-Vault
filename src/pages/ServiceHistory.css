@@ -1,0 +1,479 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);
+    min-height:100vh;
+}
+
+/* ================= PAGE ================= */
+
+.servicePage{
+    width:95%;
+    max-width:1400px;
+    margin:40px auto;
+    color:white;
+}
+
+.servicePage h1{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:30px;
+    letter-spacing:1px;
+}
+
+/* ================= BACK BUTTON ================= */
+
+.backButton{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background:#3949ab;
+    padding:10px 22px;
+    border-radius:10px;
+    font-weight:bold;
+    margin-bottom:25px;
+    transition:.3s;
+}
+
+.backButton:hover{
+    background:#283593;
+    transform:translateY(-2px);
+}
+
+/* ================= FORM ================= */
+
+.serviceForm{
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+.serviceForm input,
+.serviceForm textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.15);
+
+    color:white;
+
+    font-size:15px;
+
+    box-sizing:border-box;
+
+    transition:.3s;
+
+}
+
+.serviceForm textarea{
+
+    min-height:100px;
+
+    resize:none;
+
+    grid-column:1 / span 2;
+
+}
+
+.serviceForm input::placeholder,
+.serviceForm textarea::placeholder{
+
+    color:#dcdcdc;
+
+}
+
+.serviceForm input:focus,
+.serviceForm textarea:focus{
+
+    background:rgba(255,255,255,.22);
+
+    box-shadow:0 0 12px rgba(255,255,255,.25);
+
+}
+
+/* ================= BUTTON GROUP ================= */
+
+.buttonGroup{
+
+    grid-column:1 / span 2;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-top:10px;
+
+}
+
+/* ================= COMMON BUTTON ================= */
+
+.buttonGroup button{
+
+    width:150px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.30);
+
+}
+
+/* ================= SAVE ================= */
+
+.saveBtn{
+
+    background:linear-gradient(135deg,#00c853,#00e676);
+
+    color:white;
+
+}
+
+.saveBtn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(0,200,83,.45);
+
+}
+
+/* ================= UPDATE ================= */
+
+.updateBtn{
+
+    background:linear-gradient(135deg,#ff9800,#ffb300);
+
+    color:white;
+
+}
+
+.updateBtn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(255,152,0,.45);
+
+}
+
+/* ================= CLEAR ================= */
+
+.clearBtn{
+
+    background:linear-gradient(135deg,#607d8b,#78909c);
+
+    color:white;
+
+}
+
+.clearBtn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(96,125,139,.45);
+
+}
+
+/* ================= SEARCH ================= */
+.searchBar{
+
+    display:flex;
+
+    justify-content:flex-start;
+
+    margin:35px 0;
+
+}
+
+.searchBox{
+
+    display:flex;
+
+    align-items:center;
+
+    width:360px;
+
+    background:rgba(255,255,255,.12);
+
+    border-radius:14px;
+
+    padding:0 18px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(10px);
+
+}
+
+.searchBox input{
+
+    flex:1;
+
+    background:transparent;   /* <-- important */
+
+    border:none;
+
+    outline:none;
+
+    color:white;
+
+    font-size:17px;
+
+    padding:18px 12px;
+
+    box-shadow:none;
+
+}
+
+
+
+.searchIcon{
+
+    color:white;
+
+    font-size:26px;
+
+}
+/* ================= TABLE ================= */
+
+.tableContainer{
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+    overflow-x:auto;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    color:white;
+
+}
+
+thead{
+
+    background:#243b6b;
+
+}
+
+th{
+
+    padding:18px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+}
+
+td{
+
+    padding:15px;
+
+    text-align:center;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+tbody tr{
+
+    transition:.3s;
+
+}
+
+tbody tr:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+
+/* ================= EDIT BUTTON ================= */
+
+.editBtn{
+
+    width:80px;
+
+    height:34px;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:#2196f3;
+
+    color:white;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.editBtn:hover{
+
+    background:#1565c0;
+
+    transform:scale(1.05);
+
+}
+
+/* ================= DELETE BUTTON ================= */
+
+.deleteBtn{
+
+    width:80px;
+
+    height:34px;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:#f44336;
+
+    color:white;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.deleteBtn:hover{
+
+    background:#b71c1c;
+
+    transform:scale(1.05);
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .serviceForm{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .serviceForm textarea{
+
+        grid-column:auto;
+
+    }
+
+    .buttonGroup{
+
+        grid-column:auto;
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .searchBar{
+
+        justify-content:center;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .servicePage{
+
+        width:96%;
+
+    }
+
+    .servicePage h1{
+
+        font-size:30px;
+
+    }
+
+    .searchBox{
+
+        width:100%;
+
+    }
+
+    th{
+
+        font-size:14px;
+
+    }
+
+    td{
+
+        font-size:13px;
+
+        padding:10px;
+
+    }
+
+}

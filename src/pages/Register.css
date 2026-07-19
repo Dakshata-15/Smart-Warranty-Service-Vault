@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0F172A,#1E293B,#334155);
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+
+    width:430px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.4);
+
+}
+
+.card h1{
+
+    color:#FBBF24;
+
+    text-align:center;
+
+}
+
+.card h3{
+
+    color:white;
+
+    text-align:center;
+
+    margin:20px 0;
+
+}
+
+.card input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,.15);
+
+    color:white;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+.card input::placeholder{
+
+    color:#ddd;
+
+}
+
+.card input:focus{
+
+    box-shadow:0 0 10px #FBBF24;
+
+}
+
+.card button{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#FBBF24;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.card button:hover{
+
+    background:#f59e0b;
+
+    transform:scale(1.04);
+
+}
+
+.card p{
+
+    color:white;
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+.loginLink{
+
+    color:#FBBF24;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    margin-left:8px;
+
+}
+
+.loginLink:hover{
+
+    text-decoration:underline;
+
+}
